@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "20261118T185639Z--codex-model-lifecycle-no-go",
+  "recorded_at": "2026-11-18T18:56:39.032Z",
+  "actor": "OpenSiro AI assistant, user-requested upstream roadmap",
+  "kind": "RESEARCH",
+  "summary": "Completed plan-only Codex model-lifecycle roadmap. Narrative operator recommendation: NO_GO for a new autonomous S4 constructor. Initial PAUSE/DORMANT are restrictive bootstrap defaults, not a human PAUSE instruction or an ALLOW/RESUME grant.",
+  "evidence_urls": [
+    "https://github.com/opensiro-contributions/codex/blob/opensiro/meta/.opensiro/issues/model-lifecycle-s4-20261118/roadmap.md",
+    "https://github.com/openai/codex/commit/58ad62ce09dd7da5531cecb15fd69a21aa465332"
+  ],
+  "next_action": "No speculative feature implementation. Reopen only on a demonstrated additional prospective task and effective owner authority; any public Issue requires separate exact current-conversation consent."
+}
