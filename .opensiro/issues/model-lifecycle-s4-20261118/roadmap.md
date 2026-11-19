@@ -1,91 +1,93 @@
-# Capability Roadmap Receipt: Codex model lifecycle
+# openai/codex — Upstream #58 independent v0.18 receipt
 
-## Identity and pins
-
+- Receipt contract: proposal-gate
 - Original repository: openai/codex
-- Original HEAD: 58ad62ce09dd7da5531cecb15fd69a21aa465332
-- Observed at: 2026-11-18
-- Accepted Index assessment: https://github.com/opensiro/vsm-harness-index/blob/34e11ec4dd52e1ba3ee0111d8bca73f13918f54f/assessments/co/codex.md
+- Original HEAD: 2f0374456fd5cd280ee76de54220ab8315a0f8d0
+- Observed at: 2026-11-19
+- Accepted Index assessment: https://github.com/opensiro/vsm-harness-index/blob/c2e43bf4750841277b3e58d8ba80314121734764/assessments/co/codex.md
 - Accepted assessment blob SHA: 60c8459fdf05904f9ed29f552816ace9486e8410
 - Accepted review ref: b974893c90048d147207ae9004489c02f3116426
 - Accepted reviewed at: 2026-09-17
-- System in focus: public first-party Codex CLI/TUI/app-server runtime and its supplied provider/catalog, team and approval-review surfaces, one coding-agent organization
-- Accepted Index commit: 34e11ec4dd52e1ba3ee0111d8bca73f13918f54f
-- Catalog blob SHA: e0d5579bea2b200aa08ef4497cc1ab735252349a
-- Historical Profile / Methodology: 0.2.1 / 0.3.1
-- Accepted vector: A — C C — —
-- Last successful semantic review/check: 2026-09-17, age 62 days
+- Accepted Index commit: c2e43bf4750841277b3e58d8ba80314121734764
+- Accepted Profile version: 0.2.1
+- Accepted Skills methodology version: 0.3.1
+- Accepted VSM vector: S1=A · S2=— · S3=C · S3*=C · S4=— · S5=—
+- System in focus: Public first-party Codex CLI/TUI/app-server model catalogs, current config, MultiAgentV2 and Guardian; excludes model-provider proprietary strategy and closed desktop systems
+- Matching working fork: opensiro-contributions/codex
+- Fork owner control: ACTIVE/ALLOW per .opensiro/state.json
+- Repository-wide source map: codex-rs/app-server/src/model_catalog.rs; codex-rs/features/src/lib.rs; docs/contributing.md; original README, docs, tests, license, contributing and focused original Issues/PRs
+- Evaluation object: A hypothetical automatically selected model/provider lifecycle migration beyond ordinary catalog refresh and user-controlled routes
+- Existing-work overlap: Provider/model catalog refresh, policy-checked model availability and user-configured routes already exist. Existing threads retain their model route; MultiAgentV2/Guardian have separate scopes. `docs/contributing.md` explicitly forbids external code PRs.
+- Our on-top contribution: NO new first-party S4 constructor: a trend watcher/model migration controller lacks evidenced future-environment actor with lawful model-choice rights or unique return-to-later operation; retain provider/user choices and current catalog
+- Incremental benefit: no distinct measured improvement over native repair and parent controls; no deployed C claimed
+- Decision scope: one current-head C feasibility test, not repository-wide Index reclassification
+- Priority rationale: S3/S3* already composable; S1 autonomous; S2 needs interference proof; S4 lacks source-grounded lawful adaptation need and source contribution is restricted
+- Target transition: NO_QUALIFIED_C_TARGET
+- P1 dependencies: First reproduce model lifecycle failure under current provider policy; respect original issue-only contribution policy and preserve retained thread model binding
+- P2 optional: NONE
+- Proposed C construction: NO new first-party S4 constructor: a trend watcher/model migration controller lacks evidenced future-environment actor with lawful model-choice rights or unique return-to-later operation; retain provider/user choices and current catalog
+- C sufficiency falsifier: Demonstrated externally changing provider capability makes the existing catalog and user choice insufficient, while a legitimate opt-in autonomous S4 owner makes a distinct authorized later-run decision; original maintainers then accept the boundary
+- Scenario basis: HYPOTHETICAL
+- Proposal-stage decision: NO_GO
+- Research disposition: NO_USEFUL_CHANGE
+- Proposed validation: Compare current catalog invalidation, provider policy denial and retained live threads with hypothetical future changes; no new authorized code path or native tests executed
+- Validation state: NOT_RUN
+- Proposal falsifier: Demonstrated externally changing provider capability makes the existing catalog and user choice insufficient, while a legitimate opt-in autonomous S4 owner makes a distinct authorized later-run decision; original maintainers then accept the boundary
 - Result: NO_USEFUL_CHANGE
-- Final operator decision: NO_GO
 - External issue: DRAFT — NOT PUBLISHED
+- Public fork Issue: DRAFT — NOT PUBLISHED
 - Cost status: NOT_MEASURED
+- S1 disposition: standard agent performs autonomous tool operations and responds to results
+- S2 disposition: ordinary subagent delegation does not establish peer S2 interference regulation
+- S3 disposition: optional MAv2 root controls active worker tree
+- S3* disposition: optional Guardian independently challenges proposed action
+- S4 disposition: model catalog refresh is current configuration, not prospective S4
+- S5 disposition: human/deployer governance and configured permissions retain ultimate policy right
 
-Catalog exact identity: harness_id codex; https://github.com/openai/codex; review_ref b974893c90048d147207ae9004489c02f3116426. The original Git commit endpoint resolves that revision. Accepted assessment status is included, not proposed; catalog and RANKINGS blob readback at the pinned commit matched the selection inputs. Original current HEAD is separate from the historical review ref. Recommend Index-owned source-pinned reassessment because the last successful semantic review is over 30 days old; no such reassessment is performed or presumed accepted here.
+## Identity and pins
 
-Excluded ownership: closed-source desktop/IDE internals, model-provider strategy, corporate governance, custom external controllers and repository-development actors. Issue reports about the IDE are user-need evidence, not proof that its implementation is public or that this runtime owns the defect.
-
-[Human](https://github.com/opensiro-contributions/codex/blob/opensiro/meta/.opensiro/issues/model-lifecycle-s4-20261118/issue.md) and [AI/developer contract](https://github.com/opensiro-contributions/codex/blob/opensiro/meta/.opensiro/issues/model-lifecycle-s4-20261118/constructor-sufficiency.md) repeat NO_GO, the historical vector and priorities.
+[Accepted included Index assessment](https://github.com/opensiro/vsm-harness-index/blob/c2e43bf4750841277b3e58d8ba80314121734764/assessments/co/codex.md) at frozen `c2e43bf4750841277b3e58d8ba80314121734764`, reviewed 2026-09-17 at [original review commit](https://github.com/openai/codex/commit/b974893c90048d147207ae9004489c02f3116426); historical blob `60c8459fdf05904f9ed29f552816ace9486e8410`; Profile 0.2.1, Skills 0.3.1. Distinct [current original HEAD](https://github.com/openai/codex/commit/2f0374456fd5cd280ee76de54220ab8315a0f8d0). Source-first decision precedes comparison to original fork case. No present Index regrade.
 
 ## Rights and authority
 
-Verified public working fork opensiro-contributions/codex: fork=true, parent/source openai/codex, connector push permission true. Default branch main pin 6bd17ba6ae6ca2788026bd789f28f38b754d7379, tree cab582a63dde7c38813dbddc1ed641a8b72db39f. opensiro/meta was confirmed absent through matching refs, and no fork roadmap Issue was found. Initialize metadata from that pinned fork default, with restrictive PAUSE/DORMANT defaults. This is a bounded initial research materialization, not an invented ALLOW, human PAUSE instruction or permission for later effectful work. Recheck for collisions immediately before branch creation.
-
-[Apache-2.0 license](https://github.com/openai/codex/blob/58ad62ce09dd7da5531cecb15fd69a21aa465332/LICENSE), blob 4606e72e042564097e8780d66c1d4dcb611869bd, read in full. [Contribution policy](https://github.com/openai/codex/blob/58ad62ce09dd7da5531cecb15fd69a21aa465332/docs/contributing.md) allows issue reports/analysis and prohibits external code contributions/PRs. A CLA document exists; no personal signature, human technical review, AI-policy clearance beyond inspected sources or maintainer acceptance is claimed.
-
-The user command authorizes plan-only internal case preparation. Separate exact current-conversation consent for any public fork Issue or third-party action was not supplied. No such action is taken.
+Fork parent and owner-controlled ACTIVE/ALLOW on `opensiro/meta` independently checked. Original repo public with read rights, licensed OSS; contributor policy checked. Codex CONTRIBUTING explicitly disallows external code PRs; only original Issues/analysis are allowed by maintainers (still not published by OpenSiro). Third-party messages/public fork Issues not authorized. Original product, deployment and Index unchanged.
 
 ## Existing work / overlap
 
-Original source and exact PR metadata/diffs read through connected GitHub:
-- #44250 MERGED, head/merge eb7bd64ef935cedb6a2c90c77c78d6677f1efb45; retired saved model handling and migration/persistence tests. Its historical diff is not substituted for current source.
-- #29942 MERGED, head 5e04cde54eaaa34e476cd025516ce89752f039b9, merge 6d9dbacf1af69fc9b633132e34d63be202556a24; opt-in provider-aware static-catalog fallback.
-- #46324 MERGED, head/merge 5492c2b06e9d3e1c09cf65e5923930a6b57b4e9e; compaction recovery. Current main has narrower terminal/provider/auth guards.
-- #57337 OPEN DRAFT, head 9f7a233df849c5415cbde8eb7d4413e93da66a6c, base b6e65bfc05994fda9900bc6dfaeac2caf654eafe; catalog release backport, not shipped solely by being proposed.
-- #25440 and #57321 OPEN; full issue bodies/comments inspected. Reported config/auth incompatibility and migrated-thread history defects are not independently reproduced. No maintainer request for a new autonomous strategy owner was found in these discussions.
-
-PR metadata, head/base and relevant diffs were checked, not just titles. The technical companion links current native implementation and explains residual tasks. No modification to another author's branch.
+Source [codex-rs/app-server/src/model_catalog.rs](https://github.com/openai/codex/blob/2f0374456fd5cd280ee76de54220ab8315a0f8d0/codex-rs/app-server/src/model_catalog.rs); [codex-rs/features/src/lib.rs](https://github.com/openai/codex/blob/2f0374456fd5cd280ee76de54220ab8315a0f8d0/codex-rs/features/src/lib.rs); [docs/contributing.md](https://github.com/openai/codex/blob/2f0374456fd5cd280ee76de54220ab8315a0f8d0/docs/contributing.md). Original Issues/PRs: [pull / 62525](https://github.com/openai/codex/pull/62525); [pull / 62499](https://github.com/openai/codex/pull/62499); [issues / 56705](https://github.com/openai/codex/issues/56705). Provider/model catalog refresh, policy-checked model availability and user-configured routes already exist. Existing threads retain their model route; MultiAgentV2/Guardian have separate scopes. `docs/contributing.md` explicitly forbids external code PRs.. OPEN_PR is not SHIPPED, and search absence cannot certify global absence.
 
 ## Function ownership
 
-[Profile S4 semantics](https://github.com/opensiro/vsm-harness-profile/blob/12c23de53b039bc01fba92c9f837498b0cb1e6f3/PROFILE.md#9-system-4--outside-and-then-intelligence) require external/prospective distinctions, options and S3 coupling. Catalog refresh is sensing/transport; startup migration gives the user a choice and applies accepted selection; compaction fallback is current recovery. These facts do not prove a first-party developer-composable S4 actor.
+- **S1** historical **A**: standard agent performs autonomous tool operations and responds to results. No new credited ownership or compulsory A-to-C conversion.
+- **S2** historical **—**: ordinary subagent delegation does not establish peer S2 interference regulation. No new credited ownership or compulsory A-to-C conversion.
+- **S3** historical **C**: optional MAv2 root controls active worker tree. No new credited ownership or compulsory A-to-C conversion.
+- **S3*** historical **C**: optional Guardian independently challenges proposed action. No new credited ownership or compulsory A-to-C conversion.
+- **S4** historical **—**: model catalog refresh is current configuration, not prospective S4. No new credited ownership or compulsory A-to-C conversion.
+- **S5** historical **—**: human/deployer governance and configured permissions retain ultimate policy right. No new credited ownership or compulsory A-to-C conversion.
 
-Current source witnesses:
-- startup_prompts.rs blob 71cc1a0bde6894d7494e9163d6e9fd79f2f1ec69
-- models-manager manager.rs blob cdc890e54065d616f0bd723ea8abd93c2d15b768
-- models-manager catalog.rs blob 6137875a63ff0ce7f40985265d5d912332263527
-All refer to original HEAD above. Additional source links and the five-link rejected constructor analysis are in the AI companion. No present VSM reassessment or C claim.
+## Parallel contribution-on-top review
+
+| Candidate function/outcome | Track A: original and competing work | Track B: smallest on-top complete C or NONE | What would disprove this decision? |
+| --- | --- | --- | --- |
+| A hypothetical automatically selected model/provider lifecycle migration beyond ordinary catalog refresh and user-controlled routes | Provider/model catalog refresh, policy-checked model availability and user-configured routes already exist. Existing threads retain their model route; MultiAgentV2/Guardian have separate scopes. `docs/contributing.md` explicitly forbids external code PRs. | NO new first-party S4 constructor: a trend watcher/model migration controller lacks evidenced future-environment actor with lawful model-choice rights or unique return-to-later operation; retain provider/user choices and current catalog | Demonstrated externally changing provider capability makes the existing catalog and user choice insufficient, while a legitimate opt-in autonomous S4 owner makes a distinct authorized later-run decision; original maintainers then accept the boundary |
+| Source-native later-operation feedback | First-party sessions, host policy and existing task controls | No independent new actor or gate; preserve parent authority and implement base defects via native issues | Evidence of a missing authorized independent decision that changes subsequent operations |
 
 ## Capability priority
 
-**NO_GO. P0: candidate rejected now. P1: no admitted implementation work. P2: NONE.**
-
-The investigated operator wants continuity when a model changes. The simplest native path is current provider/catalog migration plus a narrow repair where independently reproduced. A speculative autonomous S4 loop has no demonstrated additional operator outcome in the examined evidence. This does not prove every existing migration problem fixed.
-
-S1=A, S3=C and S3*=C are not mandatory C targets. S2 lacks a qualified task in this S4-focused case. S5 policy remains outside the proposed authority. The complete matrix and exclusions are shared by Human/AI.
+P0: **NO_QUALIFIED_C_TARGET**. P1: First reproduce model lifecycle failure under current provider policy; respect original issue-only contribution policy and preserve retained thread model binding. P2: NONE. **NO_GO / NO_USEFUL_CHANGE**; no mandatory C target just because S2/S3*/S4/S5 is absent.
 
 ## Implementation options
 
-No implementation. Native catalog, migration prompt, accepted selection/persistence and compaction mechanisms are the baseline. Conditional reopening requires a real prospective task beyond them, a legitimate composable autonomous actor, scoped alternative choices, first-party later-operation application and truthful returned outcomes. Authority/freshness/hidden-target/absent-actor negatives must be applicable to the actual source, not copied template tests.
-
-Source tests were read, NOT RUN. No Rust build, model inference, before/after behavior, savings, deployment or independent review is claimed. The examples in the AI companion are future comparisons, not passed acceptance.
+NO new first-party S4 constructor: a trend watcher/model migration controller lacks evidenced future-environment actor with lawful model-choice rights or unique return-to-later operation; retain provider/user choices and current catalog. A complete novel constructor would have to identify separate owner and decision, first-party interface, enforcement and feedback with a parent-bounded correction; Demonstrated externally changing provider capability makes the existing catalog and user choice insufficient, while a legitimate opt-in autonomous S4 owner makes a distinct authorized later-run decision; original maintainers then accept the boundary. Source-native alternative is more limited and sufficient for the present evidence.
 
 ## Specification and domain alternatives
 
-No Profile/Skills patch is warranted by the bounded result. A separately scoped experimental fork remains possible under license, actual owner rights and a demonstrated task, but is not recommended as a way to evade the current NO_GO or original PR policy. New useful evidence should first enrich an existing original report if separately authorized.
+Previous Codex case NO_GO on model lifecycle; source changes and policy still provide no new qualified autonomous S4 need. This is a fresh source-pinned comparison, not a new Index grade.. Intent behind any absent functions UNKNOWN, not a default intentional absence. No Profile or Skills specification patch proposed.
 
 ## Cost experiment
 
-For the same retirement/provider/auth/session task, compare native migration plus repair against future S4 composition. Measure implementation, integration, review/testing, ongoing migration support, regressions and successful later-work continuity. All observed comparative values are NOT_MEASURED. No lower-cost claim.
+Compare current catalog invalidation, provider policy denial and retained live threads with hypothetical future changes; no new authorized code path or native tests executed. Matched implementation/integration/test hours, false decisions, token/latency and cost unmeasured; NOT_RUN / NOT_MEASURED.
 
 ## Delivery and publication
 
-PLAN_ONLY research. Final operator decision **NO_GO** in all three documents. One case under opensiro/meta only; no product diff, new contributions record, Index edit, external Issue/comment/PR or public fork GitHub Issue.
-
-Exact proposed fork destination: opensiro-contributions/codex.
-Exact proposed title: Codex: model lifecycle adaptation roadmap, NO_GO (OpenSiro plan-only).
-Exact proposed body: issue.md in this same case.
-Publication status: NOT PUBLISHED; exact current-conversation consent absent. Given NO_GO, no new original feature Issue is recommended. An original maintainer draft is not fabricated merely to fill the workflow.
-
-The structural validator must pass before initial metadata publication, followed by exact commit/file readback. Structural PASS is not semantic/behavioral/permission certification. Read back actual meta commit before claiming PERSISTED.
-
-Selection provenance: current Upstream 7b23cc852b34fbb564c2fdb12ee00d994fc0c7dd, selector run offline from fetched pinned Index inputs after unauthenticated API 403. Bounded manual GitHub source screening followed. OpenClaw already has a case; Hermes has a case and PAUSE/DORMANT; DeepSeek has no external-PR route and no matching review issue from the bounded query; DoomPi yielded a sandbox repair, not this strategic demand. Codex is the selected original for this completed case. Unique contributor count UNKNOWN; 135784 source stars are a labeled current popularity fallback, not relevance/authority proof. No exhaustive claim over all Index candidates.
+Canonical [Human](issue.md) and [AI](constructor-sufficiency.md) agree: **NO_GO / NO_USEFUL_CHANGE**. Only internal .opensiro receipt modified, original-facing Issue/PR/comment and public fork Issue NOT PUBLISHED, source code untouched and historical Index assessment unchanged.
