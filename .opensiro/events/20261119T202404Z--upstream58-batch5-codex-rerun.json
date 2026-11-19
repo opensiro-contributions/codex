@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "20261119T202404Z--upstream58-batch5-codex-rerun",
+  "recorded_at": "2026-11-19T20:24:04Z",
+  "actor": "OpenSiro AI assistant (user-requested Upstream #58 five-case rerun)",
+  "kind": "RESEARCH",
+  "decision": "NO_GO",
+  "evidence_urls": [
+    "https://github.com/opensiro-contributions/codex/commit/a97563d594f23023a6104773ff4f2a3ba0c1e48b",
+    "https://github.com/opensiro-contributions/codex/blob/a97563d594f23023a6104773ff4f2a3ba0c1e48b/.opensiro/issues/model-lifecycle-s4-20261118/roadmap.md",
+    "https://github.com/opensiro/upstream/issues/58"
+  ],
+  "note": "Proposal-gate source-first rerun recorded in canonical Human/AI/Receipt. Provider/catalog refresh and retained thread model routes are native. No autonomous S4 needs an extra future-model owner. Original CONTRIBUTING prohibits external code PRs; preserve issue/analysis only. Research NO_USEFUL_CHANGE; native tests NOT_RUN, external publication not authorized.",
+  "next_action": "Only research native provider-policy and catalog behavior; no Codex PR or speculative S4 route."
+}
