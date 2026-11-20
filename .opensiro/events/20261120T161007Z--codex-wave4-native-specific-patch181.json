@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "20261120T161007Z--codex-wave4-native-specific-patch181",
+  "recorded_at": "2026-11-20T16:10:07Z",
+  "actor": "OpenSiro #58 Codex continuation / v0.18.1",
+  "kind": "REVIEW",
+  "decision": "GO / NEEDS_EVIDENCE unchanged; native-specific clarification only",
+  "evidence_urls": [
+    "https://github.com/opensiro/upstream/issues/58#issuecomment-7043955372",
+    "https://github.com/opensiro/upstream/blob/main/changes/v0.18.1.md",
+    "https://github.com/openai/codex/commit/bb5b9c6240136de8ff4d30215e2341c44559aa04"
+  ],
+  "note": "Existing case made Codex-native: catalog watch and refresh, TUI consent, next-turn session applied event, future-result feedback. PR #88 closed unmerged; Supplementary retains history. No new run, tests, product code, public maintainer action or Index regrade.",
+  "next_action": "Optional native experiment only after maintainer/product decision; independently verify future-notice provenance, authorized next-turn application and later-run return."
+}
