@@ -1,23 +1,10 @@
-# openai/codex — independent Upstream #58 v0.18 rerun
+# Codex — Upstream #58 Wave 4 case
 
-**Research observation:** 2026-11-19 · **Original HEAD:** [2f0374456fd5cd280ee76de54220ab8315a0f8d0](https://github.com/openai/codex/commit/2f0374456fd5cd280ee76de54220ab8315a0f8d0) · **Index:** accepted historical state, not updated.
+**Current research:** GO / NEEDS_EVIDENCE for proposed S4=— -> S4=C; PLAN_ONLY, no product code or accepted Index grade change.
 
-- **Proposal-stage decision:** NO_GO
-- **Research disposition:** NO_USEFUL_CHANGE
-- **Target transition:** NO_QUALIFIED_C_TARGET
-- **Owner control:** ACTIVE / ALLOW for internal OpenSiro metadata (owner event `20261119T182226Z--owner-upstream58-active`)
-- **Canonical atomic case commit:** [a97563d594f23023a6104773ff4f2a3ba0c1e48b](https://github.com/opensiro-contributions/codex/commit/a97563d594f23023a6104773ff4f2a3ba0c1e48b)
-- [Canonical proposal-gate roadmap receipt](https://github.com/opensiro-contributions/codex/blob/a97563d594f23023a6104773ff4f2a3ba0c1e48b/.opensiro/issues/model-lifecycle-s4-20261118/roadmap.md) — historical vector, full six functions, A/B, rights, verdict and cost
-- [Human Issue draft](https://github.com/opensiro-contributions/codex/blob/a97563d594f23023a6104773ff4f2a3ba0c1e48b/.opensiro/issues/model-lifecycle-s4-20261118/issue.md) — central Index starting point and combined six-function table
-- [AI/developer sufficiency contract](https://github.com/opensiro-contributions/codex/blob/a97563d594f23023a6104773ff4f2a3ba0c1e48b/.opensiro/issues/model-lifecycle-s4-20261118/constructor-sufficiency.md) — source-backed options, falsifier and proposed native acceptance
-- [Upstream #58](https://github.com/opensiro/upstream/issues/58) — internal queue owner
-
-## Distinction from previous case
-
-Provider/catalog refresh and retained thread model routes are native. No autonomous S4 needs an extra future-model owner. Original CONTRIBUTING prohibits external code PRs; preserve issue/analysis only.
-
-## Validation and delivery
-
-Official `scripts/validate_capability_roadmap.py` from Upstream main `be03ced5ed5d3b7210762df612dc4b3f452c1a73`: **PASS** for all three published files, independently downloaded from pinned GitHub commit. This is a structural check, NOT native/semantic validation. Native tests: **NOT_RUN**. Measured user benefit/cost: **NOT_MEASURED**.
-
-Rights: original and matching fork parent checked; no original-facing publication, no fork GitHub Issue, no product implementation, no accepted Index regrade. Both publications **DRAFT — NOT PUBLISHED**. Next: Only research native provider-policy and catalog behavior; no Codex PR or speculative S4 route.
+- Original [openai/codex pinned HEAD](https://github.com/openai/codex/commit/bb5b9c6240136de8ff4d30215e2341c44559aa04); Index [included accepted state](https://github.com/opensiro/vsm-harness-index/blob/8f436270813b844aafc16917d69bc09661ef1544/assessments/co/codex.md), reviewed 2026-09-17.
+- Published protocol [v0.18.0](https://github.com/opensiro/upstream/commit/28ea2cce06b517bc4550dceddb00210b1e0dc85c).
+- [First-pass independent verdict](https://github.com/opensiro/upstream/issues/58#issuecomment-7043626535) before historical case read.
+- [Canonical roadmap](roadmap.md) · [Human summary](issue.md) · [AI technical contract](constructor-sufficiency.md).
+- [Historical 2026-11-19 NO_GO](https://github.com/opensiro-contributions/codex/blob/a97563d594f23023a6104773ff4f2a3ba0c1e48b/.opensiro/issues/model-lifecycle-s4-20261118/roadmap.md) preserved as immutable provenance; Wave4 assessment-neutral constructibility changed to GO; maintainer adoption is separate.
+- Fork internal owner control ACTIVE/ALLOW. No original/public fork Issue, comment, external code PR, implementation, native tests or measured benefit. Third-party NOT_PUBLISHED; Index unchanged. Current source-specific experiment remains to be evaluated.

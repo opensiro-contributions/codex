@@ -1,28 +1,32 @@
-# openai/codex — Upstream #58 independent Human decision
+# Codex — Wave 4 Human proposal
 
-**Target transition:** NO_QUALIFIED_C_TARGET
-**Proposal-stage decision:** NO_GO
-**Research disposition:** NO_USEFUL_CHANGE
+**Target transition:** S4=— -> S4=C
+**Proposal-stage decision:** GO
+**Research disposition:** NEEDS_EVIDENCE
 
-[roadmap.md](roadmap.md) — canonical receipt; [constructor-sufficiency.md](constructor-sufficiency.md) — technical AI contract. Internal draft, NOT PUBLISHED.
+[roadmap.md](roadmap.md) is the canonical proposal receipt; [constructor-sufficiency.md](constructor-sufficiency.md) is the AI/source-native contract. This is internal PLAN_ONLY research, not implementation, product direction or an Index regrade.
 
-## Accepted baseline and current source
+## Accepted baseline and current Codex
 
-Accepted historical [Index review](https://github.com/opensiro/vsm-harness-index/blob/c2e43bf4750841277b3e58d8ba80314121734764/assessments/co/codex.md) (2026-09-17, Profile 0.2.1, Skills 0.3.1; blob `60c8459fdf05904f9ed29f552816ace9486e8410`). Original current [HEAD](https://github.com/openai/codex/commit/2f0374456fd5cd280ee76de54220ab8315a0f8d0) is separately pinned and not automatically reclassified.
+Historical Index [included assessment](https://github.com/opensiro/vsm-harness-index/blob/8f436270813b844aafc16917d69bc09661ef1544/assessments/co/codex.md) reviewed 2026-09-17 (blob 60c8459fdf05904f9ed29f552816ace9486e8410, Profile 0.2.1, Skills 0.3.1) and new [original HEAD](https://github.com/openai/codex/commit/bb5b9c6240136de8ff4d30215e2341c44559aa04) are distinct.
 
-| Function / role | Historical Index state | Current owner/closure | Priority / candidate |
+| Function / role | Historical Index state | Current source-backed owner/closure | Priority / candidate |
 | --- | --- | --- | --- |
-| **S1 · Operations** | A | standard agent performs autonomous tool operations and responds to results | NO_TARGET / DEFER |
-| **S2 · Coordination** | — | ordinary subagent delegation does not establish peer S2 interference regulation | NO_TARGET / DEFER |
-| **S3 · Current regulation** | C | optional MAv2 root controls active worker tree | NO_TARGET / DEFER |
-| **S3* · Independent audit** | C | optional Guardian independently challenges proposed action | NO_TARGET / DEFER |
-| **S4 · Prospective environment** | — | model catalog refresh is current configuration, not prospective S4 | NO_TARGET / DEFER |
-| **S5 · Ultimate identity/policy** | — | human/deployer governance and configured permissions retain ultimate policy right | NO_TARGET / DEFER |
+| **S1 · Operations** | A | Local coding agent executes tools and responds to results ([core](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/codex-rs/core/src/session/mod.rs)) | NO_TARGET |
+| **S2 · Peer coordination** | — | Worker communication and task assignment exist; dedicated peer interference regulation unverified ([multi-agent tools](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/codex-rs/core/src/tools/handlers/multi_agents_spec.rs)) | DEFER |
+| **S3 · Current regulation** | C | Optional root can inspect and intervene in live worker tree ([tools](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/codex-rs/core/src/tools/handlers/multi_agents_spec.rs)) | NO_TARGET |
+| **S3* · Audit** | C | Optional Guardian separately reviews and blocks selected risky actions ([review](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/codex-rs/ext/guardian-reviewer/src/routing.rs)) | NO_TARGET |
+| **S4 · Future environment** | — | Catalog refresh and user migration prompts are reactive, with no autonomous future-options/next-turn-return chain ([refresh](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/codex-rs/app-server/src/models_refresh_worker.rs)) | P0 prospective S4 proposal |
+| **S5 · Identity and policy** | — | User/host retains model selection, provider credentials and policies ([config](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/codex-rs/protocol/src/config_types.rs)) | NO_TARGET, parent owns policy |
 
-## Operator question and answer
+## Proposed optional capability
 
-A hypothetical automatically selected model/provider lifecycle migration beyond ordinary catalog refresh and user-controlled routes. Track A native: Provider/model catalog refresh, policy-checked model availability and user-configured routes already exist. Existing threads retain their model route; MultiAgentV2/Guardian have separate scopes. `docs/contributing.md` explicitly forbids external code PRs.. Track B: NO new first-party S4 constructor: a trend watcher/model migration controller lacks evidenced future-environment actor with lawful model-choice rights or unique return-to-later operation; retain provider/user choices and current catalog. **NO_GO** because Demonstrated externally changing provider capability makes the existing catalog and user choice insufficient, while a legitimate opt-in autonomous S4 owner makes a distinct authorized later-run decision; original maintainers then accept the boundary remains unproven and the existing native work is better scoped. This is not a claim the original issues were resolved.
+A developer-composed, provider-scoped future-model advisor could inspect dated external model-retirement or capability notices, autonomously choose a permissible future strategy (retain, prepare-approved-migration or hold), request an approved change from the existing host/S3 for the next turn, then observe that next model choice and actual later run results. Human/host authority is preserved; silent model/provider/cost changes are forbidden. This is not an instruction that Codex ought to build it.
 
-## Evidence and next step
+**Track A:** current [catalog](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/codex-rs/models-manager/src/manager.rs), [polling](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/codex-rs/app-server/src/models_refresh_worker.rs), [TUI migration](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/codex-rs/tui/src/model_migration.rs) and [next-turn settings](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/codex-rs/core/src/session/model_catalog_settings.rs); merged original [#47932](https://github.com/openai/codex/pull/47932) and [#50013](https://github.com/openai/codex/pull/50013). Capacity-recovery [issue #55983](https://github.com/openai/codex/issues/55983) is a separate current-task need.
 
-Original [codex-rs/app-server/src/model_catalog.rs](https://github.com/openai/codex/blob/2f0374456fd5cd280ee76de54220ab8315a0f8d0/codex-rs/app-server/src/model_catalog.rs); [codex-rs/features/src/lib.rs](https://github.com/openai/codex/blob/2f0374456fd5cd280ee76de54220ab8315a0f8d0/codex-rs/features/src/lib.rs); [docs/contributing.md](https://github.com/openai/codex/blob/2f0374456fd5cd280ee76de54220ab8315a0f8d0/docs/contributing.md); native links [pull / 62525](https://github.com/openai/codex/pull/62525); [pull / 62499](https://github.com/openai/codex/pull/62499); [issues / 56705](https://github.com/openai/codex/issues/56705). P1: First reproduce model lifecycle failure under current provider policy; respect original issue-only contribution policy and preserve retained thread model binding. Previous Codex case NO_GO on model lifecycle; source changes and policy still provide no new qualified autonomous S4 need. This is a fresh source-pinned comparison, not a new Index grade.. New tests NOT_RUN, cost NOT_MEASURED. No third-party publication, source edit or Index regrade. Owner ACTIVE/ALLOW applies to internal fork meta only. AI-assisted draft.
+**Track B:** P0 minimum future S4 decision + lawful host proposal/ack + actual later feedback. P1 source notice validation, user/developer allowlist, idempotence, supported next-turn-only effect and native positive/negative tests. P2 optional analytics. A digest alone or a reactive picker is NOT complete C.
+
+## Comparison and stop gates
+
+[Independent first pass](https://github.com/opensiro/upstream/issues/58#issuecomment-7043626535) was sealed before comparison. [Historical case](https://github.com/opensiro-contributions/codex/blob/a97563d594f23023a6104773ff4f2a3ba0c1e48b/.opensiro/issues/model-lifecycle-s4-20261118/roadmap.md) was NO_GO / NO_USEFUL_CHANGE when unmeasured product usefulness and absent explicit model-choice rights were treated as vetoes. Neutral v0.18.0 separates possible bounded C construction from product adoption. New proposal GO / NEEDS_EVIDENCE is hypothetical; no native tests or cost measurement. The original [contributing policy](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/docs/contributing.md) rejects external code PRs; original/public fork publication NOT_PUBLISHED. Original maintainers retain the decision to adopt or reject.

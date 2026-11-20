@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "20261120T153939Z--codex-wave4-s4-neutral",
+  "recorded_at": "2026-11-20T15:39:39Z",
+  "actor": "OpenSiro #58 Wave 4 independent reviewer",
+  "kind": "DECISION",
+  "decision": "GO / NEEDS_EVIDENCE (S4=— -> S4=C, PLAN_ONLY)",
+  "evidence_urls": [
+    "https://github.com/opensiro/upstream/issues/58#issuecomment-7043626535",
+    "https://github.com/openai/codex/commit/bb5b9c6240136de8ff4d30215e2341c44559aa04",
+    "https://github.com/opensiro/vsm-harness-index/blob/8f436270813b844aafc16917d69bc09661ef1544/assessments/co/codex.md",
+    "https://github.com/opensiro/upstream/commit/28ea2cce06b517bc4550dceddb00210b1e0dc85c"
+  ],
+  "note": "Fresh first pass sealed before historical case; assessment-neutral S4 C constructibility GO versus old product-utility-based NO_GO. Historical case preserved in Git ancestry. No implementation, native tests, public fork Issue or original-facing interaction.",
+  "next_action": "Review optional first-party future S4 actor and host next-turn proposal/ack return under separate original maintainer product decision."
+}

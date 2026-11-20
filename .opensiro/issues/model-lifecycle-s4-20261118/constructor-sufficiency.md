@@ -1,26 +1,30 @@
-# openai/codex — AI constructor feasibility and falsifier
+# Codex — Wave 4 AI constructor sufficiency
 
-**Target transition:** NO_QUALIFIED_C_TARGET
-**Proposal-stage decision:** NO_GO
-**Research disposition:** NO_USEFUL_CHANGE
+**Target transition:** S4=— -> S4=C
+**Proposal-stage decision:** GO
+**Research disposition:** NEEDS_EVIDENCE
 
-Human [issue.md](issue.md), canonical [roadmap.md](roadmap.md). Internal PLAN_ONLY draft; historical grades only in canonical receipt/Human.
+Canonical [roadmap.md](roadmap.md) and [issue.md](issue.md) own the historical six-function table and source pins. First pass [sealed before historical review](https://github.com/opensiro/upstream/issues/58#issuecomment-7043626535); original pinned [commit](https://github.com/openai/codex/commit/bb5b9c6240136de8ff4d30215e2341c44559aa04). This is NOT a shipped or tested constructor and does not change Index.
 
-## Boundary and functional counterfactual
+## Function-specific Track A and Track B
 
-Public first-party Codex CLI/TUI/app-server model catalogs, current config, MultiAgentV2 and Guardian; excludes model-provider proprietary strategy and closed desktop systems. Question: A hypothetical automatically selected model/provider lifecycle migration beyond ordinary catalog refresh and user-controlled routes. First-party sources [codex-rs/app-server/src/model_catalog.rs](https://github.com/openai/codex/blob/2f0374456fd5cd280ee76de54220ab8315a0f8d0/codex-rs/app-server/src/model_catalog.rs); [codex-rs/features/src/lib.rs](https://github.com/openai/codex/blob/2f0374456fd5cd280ee76de54220ab8315a0f8d0/codex-rs/features/src/lib.rs); [docs/contributing.md](https://github.com/openai/codex/blob/2f0374456fd5cd280ee76de54220ab8315a0f8d0/docs/contributing.md). If a new model or reviewer is removed, could the native producer/host and existing issue fixes still solve the same concrete task? At present yes for the bounded research stage; there is no independently demonstrated new decision right.
-
-## Track A and Track B
-
-| Function-specific obligation | Existing original path | Smallest future proposal versus no-construction | Falsifier |
+| C-sufficiency link | First-party Track A | Independent Track B minimal next link | Falsifier |
 | --- | --- | --- | --- |
-| Separate lawful decision and evidence | Provider/model catalog refresh, policy-checked model availability and user-configured routes already exist. Existing threads retain their model route; MultiAgentV2/Guardian have separate scopes. `docs/contributing.md` explicitly forbids external code PRs. | NO new first-party S4 constructor: a trend watcher/model migration controller lacks evidenced future-environment actor with lawful model-choice rights or unique return-to-later operation; retain provider/user choices and current catalog | Demonstrated externally changing provider capability makes the existing catalog and user choice insufficient, while a legitimate opt-in autonomous S4 owner makes a distinct authorized later-run decision; original maintainers then accept the boundary |
-| Applied correction and later operational feedback | Existing first-party state, host permissions and current tool/task loops | Do not add speculative port; fix native defect, then retest separate owner and parent authority | New path adds no unique outcome or cannot enforce lawful correction |
+| Environmental future input | [ModelsManager](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/codex-rs/models-manager/src/manager.rs) has online/cache/provider-scoped catalog | dated externally attributable future model retirement/capability notice with origin and expiry | current catalog only or stale alert |
+| Autonomous strategy choice | [Migration UI](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/codex-rs/tui/src/model_migration.rs) obtains user acceptance | optional first-party model-transition advisor chooses retain / prepare-approved-migration / hold against approved eligible set, records rationale | no distinct advisor choice or always auto-switch |
+| S4-to-S3 authorized action | [Session settings](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/codex-rs/core/src/session/model_catalog_settings.rs) change only at next turn | typed proposal to host/S3, accept/deny/defer feedback, apply next-turn-only under policy | direct current-turn change, no authorized port |
+| S3-to-S4 later return | host can read chosen model and operational outcome | correlate proposal ID, applied/denied choice and subsequent model/run result; update future options | one-way digest or missing actual later feedback |
 
-## Engineering and native validation boundary
+Track A also includes [4m30s catalog refresh](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/codex-rs/app-server/src/models_refresh_worker.rs), [provider-scoped deprecation prompts](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/codex-rs/tui/src/app/startup_prompts.rs), merged original [PR #47932](https://github.com/openai/codex/pull/47932) and [PR #50013](https://github.com/openai/codex/pull/50013). [Issue #55983](https://github.com/openai/codex/issues/55983) concerns recovery from temporary capacity failure, not independent prospective S4 ownership. First-party optional root-worker and Guardian ([routing](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/codex-rs/ext/guardian-reviewer/src/routing.rs)) do not supply S4 by themselves.
 
-P1 First reproduce model lifecycle failure under current provider policy; respect original issue-only contribution policy and preserve retained thread model binding; P2 NONE. Consider candidate only if source and maintainer permit actual decision/enforcement feedback on this supported runtime. Do not re-label logging, a named reviewer, task delegation or model catalog change as an autonomous function. Native acceptance scenarios **NOT_RUN**: Compare current catalog invalidation, provider policy denial and retained live threads with hypothetical future changes; no new authorized code path or native tests executed. Negative controls: stale/missing owner, permission denial, baseline compatibility and duplicate/native fix competitor where applicable. Falsifier: Demonstrated externally changing provider capability makes the existing catalog and user choice insufficient, while a legitimate opt-in autonomous S4 owner makes a distinct authorized later-run decision; original maintainers then accept the boundary.
+## Proposed source-native C witness
 
-## Decision, rights and handoff
+Scenario HYPOTHETICAL: a future dated vendor sunset notice predicts reduced availability before failure. Developer opts into a bounded advisory provider+model allowlist. Advisor assesses competing future choices and publishes a typed, expiring proposal to existing host/S3. S3 applies only an already-authorized next-turn configuration or rejects it, returning an attributed response. Later operational/model outcome flows back to advisor to revise its subsequent choice. User/host S5 rights and current-running-step model remain untouched. This complete path is **PROPOSED_C_SUFFICIENT IF IMPLEMENTED AND VALIDATED**, not evidence of a current C.
 
-**NO_GO / NO_USEFUL_CHANGE**. Previous Codex case NO_GO on model lifecycle; source changes and policy still provide no new qualified autonomous S4 need. This is a fresh source-pinned comparison, not a new Index grade.. No implemented constructor, current Index grade, cost result, original-facing Issue/PR or public fork Issue; all external publication DRAFT — NOT PUBLISHED. AI assistance acknowledged.
+## P0 / P1 / P2 and native acceptance
+
+P0: smallest optional independent future S4 actor with lawful next-turn host proposal/ack and observed later run return. P1: provider notice provenance, expiry, authorization, blocked unaffordable/unavailable model, duplicate prevention, denial feedback and native tests. P2: optional measured cost/quality comparisons.
+
+Positive: independently select from at least two valid future options on a dated vendor notice; S3 approves, next turn actually changes within approved configuration, later result returns and changes future strategy. Negative: stale/unsigned notice, unauthorized provider/model/cost, no permission, same-running-turn change, denied proposal, duplicate and missing effect/feedback must NOT be passed as C. Contrast with native catalog + picker; compare actual original-native regression results before implementation conclusions.
+
+**Stop/falsify:** equivalent shipped first-party prospective S4 ownership/effect/return; no lawful host/S3 new port; pure user-only prompt or alert; or impossible feedback. Absence of measured product adoption value does not prove architectural impossibility. Native tests NOT_RUN, cost NOT_MEASURED; original [docs/contributing.md](https://github.com/openai/codex/blob/bb5b9c6240136de8ff4d30215e2341c44559aa04/docs/contributing.md) forbids external code PRs. No external/public fork Issue or PR was published.
